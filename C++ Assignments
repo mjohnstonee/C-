@@ -1,0 +1,107 @@
+//IT205 Intro to Obj Oriented Programming 
+//Programmer: Michelle Johnstone 
+//Date: February 8, 2018 
+ 
+
+
+#include<iostream>
+#include<iomanip>
+#include<conio.h>
+using namespace std;
+
+
+int main() {
+    
+    
+    cout<<"*************************************************\n";
+    cout<<"*//IT205 Intro to Obj Oriented Programming *\n";
+    cout<<"*//Programmer: Michelle Johnstone*\n";
+    cout<<"*//Date: February 8, 2018 *\n";
+    cout<<"*************************************************\n";
+    
+    
+    //read first and last name 
+    string fname,lname;
+    cout<<"Please enter your first and last name: ";
+    cin>>fname>>lname;
+    cout<<"You entered " <<fname<<"  "<<lname<<endl<<endl;
+    
+    
+    string ccn;
+    cout<<"Please enter your credit card number: ";
+    cin>>ccn;
+    cout<<"You entered "<<ccn<<endl<<endl;
+    
+    float balance;
+    cout<<"Please enter your balance: ";
+    cin>>balance;
+    cout<<"You entered "<<balance<<endl<<endl;
+    
+    
+    float payment;
+    cout<<"Please enter the payment you made: ";
+    cin>>payment;
+    cout<<"You entered " <<payment<<endl<<endl; 
+    
+    
+    int d1,d2;
+    cout<<"Please enter days in billing period: ";
+    cin>>d2;
+    cout<<"You entered " <<d2<<endl<<endl;
+    
+    //calculations 
+    float ADB, interest;
+    
+    ADB=(balance*d1-payment*d2 )/d1;
+    interest=0.15*ADB;
+    
+    
+    cout<<left<<fixed<<showpoint<<setprecision(2);
+    cout<<"***************************************\n";
+    cout<<"1234567890123456789012345678901234567890\n";
+    cout<<"****************************************\n";
+    cout<<left<<setw(15)<<fname<<setw(15)<<lname
+        <<right<<setw(10)<<ccn<<endl;
+        
+        cout<<"=====================================\n";
+        cout<<right<<setw(15)<<"First Name"<<setw(15)<<"Last Name"
+        <<setw(10)<<"CCN"<<endl;
+        
+        
+        cout<<"-------------------------------------\n";
+        cout<<left<<setw(30)<<setfill ('.') <<"Balance amount" 
+            <<right<<setw(10)<<balance<<endl;
+            
+              cout<<"-------------------------------------\n";
+        cout<<left<<setw(30)<<setfill ('.') <<"Payment made"
+            <<right<<setw(10)<<payment;
+            
+              cout<<"-------------------------------------\n";
+        cout<<left<<setw(30)<<setfill ('.') <<"Billing period in days"
+            <<right<<setw(10)<<d1<<endl;
+            
+              cout<<"-------------------------------------\n";
+        cout<<left<<setw(30)<<setfill ('.') <<"Days before due date"
+            <<right<<setw(10)<<d2<<endl;
+            
+              cout<<"-------------------------------------\n";
+        cout<<left<<setw(30)<<setfill ('.') <<"Average daily balance"
+            <<right<<setw(10)<<ADB<<endl;
+            
+            
+              cout<<"-------------------------------------\n";
+        cout<<left<<setw(30)<<setfill ('.') <<"Interest owed"
+            <<right<<setw(10)<<interest<<endl;
+            
+            cout<<"-----------------------------------------\n";
+            
+        
+        
+        
+    
+    
+    cout<<"Press any key to continue\n";
+    getch();
+    return 0;
+}//end of main 
+
